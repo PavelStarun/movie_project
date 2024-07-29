@@ -4,7 +4,7 @@ from django.db import models
 class Movie(models.Model):
     films = models.CharField('Название фильма', max_length=50)
     description = models.TextField('описание фильма', max_length=200)
-    text = models.TextField('Отзыв')
+    review = models.TextField('Отзыв')
 
 
     def __str__(self):

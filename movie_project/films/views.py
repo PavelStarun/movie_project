@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from .models import Movie
 from .forms import MovieForm
 
-
 def add_movie(request):
     if request.method == 'POST':
         form = MovieForm(request.POST)
